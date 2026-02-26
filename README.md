@@ -32,15 +32,6 @@ React Native TurboModule + C++ search engine - a C++ learning exercise.
   - C++ search engine package with tests.
   - Single source of truth for indexing/search logic used by `@pokemon-search/tcg-native`.
 
-## Commands
-
-```bash
-nvm install 22
-nvm use 22
-pnpm install
-pnpm build
-pnpm test
-```
 
 ### Demo app
 
