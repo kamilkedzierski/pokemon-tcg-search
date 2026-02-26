@@ -2,6 +2,8 @@
 
 React Native TurboModule + C++ search engine - a C++ learning exercise.
 
+![demo](./assets/demo.gif)
+
 ## Stack
 
 - `pnpm workspaces`
