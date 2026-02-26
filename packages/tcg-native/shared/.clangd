@@ -1,0 +1,13 @@
+CompileFlags:
+  Add:
+    - -std=c++20
+    - -I.
+    - -I../../core-cpp/include
+    - -I../node_modules/react-native/ReactCommon
+    - -I../node_modules/react-native/ReactCommon/jsi
+    - -I../node_modules/react-native/ReactCommon/callinvoker
+    - -I../node_modules/react-native/ReactCommon/react/nativemodule/core
+    - -I../android/build/generated/source/codegen/jni
+    - -I../android/build/generated/source/codegen/jni/react/renderer/components/AppSpecs
+    - -I../../../apps/demo/ios/Pods/Headers/Public/ReactNativeDependencies
+    - -I../../../apps/demo/ios/Pods/ReactNativeDependencies/Headers

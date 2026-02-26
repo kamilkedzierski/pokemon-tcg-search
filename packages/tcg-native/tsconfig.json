@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "lib": ["ESNext"],
+    "types": ["react", "react-native"],
+    "customConditions": ["react-native-strict-api"],
+    "paths": {
+      "@pokemon-search/tcg-native": ["./src/index"]
+    }
+  },
+  "include": ["src/**/*.ts", "specs/**/*.ts"]
+}

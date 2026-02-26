@@ -1,0 +1,22 @@
+If:
+  PathMatch: .*\.(h|m|mm)$
+CompileFlags:
+  Add:
+    - -xobjective-c++
+    - -std=c++20
+    - -I.
+    - -I../shared
+    - -I../../core-cpp/include
+    - -I../node_modules/react-native/ReactCommon
+    - -I../node_modules/react-native/ReactCommon/jsi
+    - -I../node_modules/react-native/ReactCommon/callinvoker
+    - -I../node_modules/react-native/ReactCommon/react/nativemodule/core
+    - -I../android/build/generated/source/codegen/jni
+    - -I../android/build/generated/source/codegen/jni/react/renderer/components/AppSpecs
+    - -I../../../apps/demo/ios/Pods/Headers/Public
+    - -I../../../apps/demo/ios/Pods/Headers/Public/React-Core
+    - -I../../../apps/demo/ios/Pods/Headers/Public/React-NativeModulesApple
+    - -I../../../apps/demo/ios/Pods/Headers/Public/React-Core-prebuilt
+    - -I../../../apps/demo/ios/Pods/Headers/Public/ReactCommon
+    - -I../../../apps/demo/ios/Pods/Headers/Public/ReactNativeDependencies
+    - -I../../../apps/demo/ios/Pods/ReactNativeDependencies/Headers

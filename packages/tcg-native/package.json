@@ -1,0 +1,68 @@
+{
+  "name": "@pokemon-search/tcg-native",
+  "version": "0.1.0",
+  "description": "Pure C++ TurboModule for Pokemon TCG search",
+  "homepage": "https://github.com/kamilkedzierski/pokemon-tcg-search",
+  "author": "Kamil Kedzierski",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kamilkedzierski/pokemon-tcg-search.git"
+  },
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "react-native": "./src/index.ts",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "specs",
+    "android",
+    "ios",
+    "shared",
+    "*.podspec",
+    "react-native.config.js"
+  ],
+  "scripts": {
+    "build": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "test": "echo 'No JS tests yet'",
+    "clean": "rm -rf android/build"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@pokemon-search/core-cpp": "workspace:*"
+  },
+  "devDependencies": {
+    "@react-native/babel-preset": "0.84.0",
+    "@types/react": "^19.2.0",
+    "react": "19.2.3",
+    "react-native": "0.84.0",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "codegenConfig": {
+    "name": "AppSpecs",
+    "type": "modules",
+    "jsSrcsDir": "specs",
+    "android": {
+      "javaPackageName": "com.pokemonsearch.tcg.specs"
+    },
+    "ios": {
+      "modules": {
+        "NativeTcgSearchModule": {
+          "className": "TcgSearchProvider"
+        }
+      }
+    }
+  }
+}

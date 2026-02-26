@@ -1,0 +1,19 @@
+{
+  "name": "pokemon-tcg-search-monorepo",
+  "private": true,
+  "packageManager": "pnpm@10.10.0",
+  "scripts": {
+    "build": "corepack pnpm -r run build",
+    "test": "corepack pnpm -r run test",
+    "lint": "corepack pnpm -r run lint",
+    "clean": "corepack pnpm -r run clean",
+    "demo:start": "corepack pnpm --filter @pokemon-search/demo start",
+    "demo:ios": "corepack pnpm --filter @pokemon-search/demo ios",
+    "demo:android": "corepack pnpm --filter @pokemon-search/demo android"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.7",
+    "turbo": "^2.3.3",
+    "typescript": "^5.7.3"
+  }
+}
